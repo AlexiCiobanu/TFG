@@ -1,0 +1,35 @@
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0; /* Mantiene el margen entre los elementos de la lista */
+}
+
+.sidebar a {
+    display: block; /* Asegúrate de que el enlace ocupe toda la línea */
+    text-decoration: none !important; /* Eliminar el subrayado */
+    color: #cb0202 !important; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 8px; /* Agrega un poco de espacio interior */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.sidebar a:hover {
+    background-color: rgba(0, 74, 173, 0.1); /* Fondo suave al pasar el mouse */
+}
+
+.sidebar a:visited {
+    text-decoration: none !important; /* Asegúrate de que los enlaces visitados tampoco tengan subrayado */
+}
+
+.sidebar ul li a {
+    text-decoration: none !important; /* Eliminar el subrayado */
+}

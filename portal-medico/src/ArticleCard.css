@@ -1,0 +1,13 @@
+.article-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .article-card:hover {
+    transform: scale(1.05);
+  }
+  

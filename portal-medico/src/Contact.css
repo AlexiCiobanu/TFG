@@ -1,0 +1,77 @@
+/* Contact.css */
+
+.contact-container {
+  background-color: #f0f8ff; /* Fondo azul claro suave */
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #004aad; /* Color del título */
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+* {
+  box-sizing: border-box;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #004aad; /* Color de las etiquetas */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #004aad; /* Color de borde al enfocar */
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  background-color: #004aad; /* Azul oscuro */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #66bb6a; /* Color dorado en hover */
+}
+
+/* Añade un poco de margen al final del contenedor */
+.contact-container p {
+  color: #555;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}

@@ -1,0 +1,92 @@
+/* Reset de box-sizing para todos los elementos */
+* {
+    box-sizing: border-box; /* Aplicar box-sizing a todos los elementos */
+}
+
+/* Estilo general del body */
+body {
+    margin: 0; /* Eliminar el margen del body */
+    font-family: 'Open Sans', sans-serif; /* Fuente general */
+    background-color: #d4ede2; /* Color de fondo */
+    min-height: 100vh; /* Altura mínima para el body */
+}
+
+/* Estilo para el contenedor del formulario */
+.register-container {
+    background-color: #f0f8ff; /* Fondo azul claro suave */
+    padding: 0 2rem; /* Espaciado interior sin padding arriba y abajo */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo */
+    margin: 1rem auto; /* Reduce el margen vertical del contenedor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: 'Open Sans', sans-serif; /* Fuente específica para el contenedor */
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: auto; /* Ajustar altura al contenido */
+}
+
+/* Estilo para el título */
+.register-container h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #004aad; /* Color del título */
+    margin-bottom: 1rem; /* Reducir espacio inferior */
+    font-size: 2rem; /* Tamaño de fuente */
+}
+
+/* Estilo para las etiquetas */
+.register-container label {
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+    font-weight: bold; /* Negrita */
+    color: #004aad; /* Color de las etiquetas */
+}
+
+/* Estilo para los campos de entrada */
+.register-container input,
+.register-container select {
+    padding: 0.75rem; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    margin-bottom: 1rem; /* Espacio entre campos */
+    transition: border-color 0.3s ease; /* Transición suave */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Estilo para el enfoque de los campos de entrada */
+.register-container input:focus,
+.register-container select:focus {
+    border-color: #004aad; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilo para el botón de envío */
+.button-container {
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    margin-bottom: 3rem; /* Duplicar espacio debajo del botón */
+}
+
+.register-container button {
+    background-color: #004aad; /* Azul oscuro para el botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.75rem 1.5rem; /* Espacio interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-top: 0.5rem; /* Reducir espacio superior */
+    transition: background-color 0.3s ease; /* Transición */
+}
+
+.register-container button:hover {
+    background-color: #66bb6a; /* Color dorado en hover */
+}
+
+/* Añade un poco de margen al final del contenedor */
+.register-container p {
+    color: #555; /* Color de texto */
+    text-align: center; /* Centrado */
+    margin-top: 1rem; /* Reducir margen superior */
+    font-size: 1rem; /* Tamaño de fuente */
+}

@@ -1,0 +1,98 @@
+/* src/Navbar.css */
+.navbar {
+  background-color: #004aad; 
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Necesario para el dropdown */
+}
+
+.navbar-item {
+  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+  font-weight: bold; /* Fuente en negrita */
+  padding: 10px;
+  position: relative; /* Aseguramos que el dropdown se posicione correctamente en relación a este elemento */
+}
+
+.navbar-item a {
+  color: white; 
+  text-decoration: none; /* Sin subrayado por defecto */
+  transition: color 0.3s ease; 
+}
+
+.navbar-item a:hover {
+  color: #ffcc00; 
+}
+
+/* No hay subrayado ni border para el enlace activo de "Servicios Médicos" */
+.navbar-item.active a {
+  font-weight: bold;
+  color: #007BFF; 
+  border-bottom: none; /* Sin subrayado para el activo */
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+  border: 1px solid #ddd; /* Borde suave alrededor del dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  padding: 0.5rem 0; /* Espaciado interno del dropdown */
+  z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+  display: none; /* Oculta el dropdown por defecto */
+  position: absolute; /* Asegura que el dropdown esté posicionado correctamente */
+  top: 135%; /* Posicionar justo debajo de la navbar */
+}
+
+/* Estilo para mostrar el dropdown al pasar el mouse sobre el padre */
+.navbar-item:hover .dropdown {
+  display: block; /* Muestra el dropdown al pasar el ratón */
+}
+
+.dropdown li {
+  margin: 0; /* Sin margen en los elementos de la lista */
+}
+
+.dropdown a {
+  color: #004aad; /* Color del texto (azul oscuro) */
+  text-decoration: none; /* Eliminar el subrayado */
+  display: block; /* Hacer que cada enlace ocupe toda la línea */
+  padding: 0.5rem 1rem; /* Espaciado interno entre enlaces */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+  font-size: 0.9rem; /* Tamaño de fuente ajustado a un tamaño más elegante */
+}
+
+/* Estilo para el hover de los enlaces */
+.dropdown a:hover {
+  background-color: rgba(0, 74, 173, 0.1); /* Fondo azul claro muy suave al hacer hover */
+  color: #007BFF; /* Cambiar color de texto al hacer hover */
+}
+
+/* Asegúrate de que los enlaces en el dropdown no tengan subrayado en estado activo */
+.dropdown a.active {
+  text-decoration: none; /* Asegúrate de que no haya subrayado */
+  font-weight: bold; /* Otras propiedades que desees aplicar en el estado activo */
+}
+
+/* Asegúrate de que los enlaces no estén subrayados, incluso en estado activo */
+.navbar-item.active .dropdown a {
+  text-decoration: none; /* Asegúrate de que no haya subrayado en el estado activo */
+  font-weight: bold; /* Otras propiedades que desees aplicar en el estado activo */
+}
+
+/* Nueva regla para eliminar el subrayado de los enlaces del dropdown si el padre está activo */
+.navbar-item.active .dropdown a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: #004aad; /* Mantener el color consistente */
+}

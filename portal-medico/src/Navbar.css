@@ -44,15 +44,16 @@
 }
 
 /* Estilos para el dropdown */
+/* Estilos para el dropdown */
 .dropdown {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+  background: linear-gradient(to bottom, #66bbff 30%, #ffffff 70%); /* Gradiente de azul claro a blanco */
   border: 1px solid #ddd; /* Borde suave alrededor del dropdown */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
   padding: 0.5rem 0; /* Espaciado interno del dropdown */
   z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
   display: none; /* Oculta el dropdown por defecto */
   position: absolute; /* Asegura que el dropdown esté posicionado correctamente */
-  top: 135%; /* Posicionar justo debajo de la navbar */
+  top: 100%; /* Posicionar justo debajo de la navbar */
 }
 
 /* Estilo para mostrar el dropdown al pasar el mouse sobre el padre */

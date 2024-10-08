@@ -20,23 +20,6 @@ body {
   background-color: #d4ede2; /* Color de fondo menta para la sección principal */
 }
 
-/* Estilo de la barra lateral */
-.sidebar {
-  width: 250px; /* Ancho de la barra lateral aumentado */
-  background-color: #e0f7fa; /* Color de fondo para la barra lateral */
-  padding: 1rem; /* Espaciado interior */
-  display: flex; /* Permite usar flexbox */
-  flex-direction: column; /* Organiza los botones en columna */
-  gap: 10px; /* Espaciado entre los botones */
-}
-
-/* Elimina los estilos de la lista */
-.sidebar ul {
-  list-style-type: none; /* Elimina los puntos */
-  padding: 0; /* Elimina el padding de la lista */
-  margin: 0; /* Elimina el margen de la lista */
-}
-
 /* Estilo del contenido */
 .content {
   flex: 1; /* Ocupa el espacio restante */
@@ -153,17 +136,7 @@ body {
   background-color: #004aad; /* Color azul oscuro al hacer hover */
 }
 
-/* Nuevos estilos para la sidebar */
-.sidebar {
-  width: 250px; /* Ancho aumentado */
-  background-color: #e0f7fa; /* Color de fondo para la barra lateral */
-}
-
-/* Nuevos estilos para la navbar */
-.navbar-item {
-  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
-  font-weight: bold; /* Texto en negrita */
-}
+/* Elimina los estilos de los enlaces globalmente */
 a {
   text-decoration: none !important; /* Eliminar el subrayado de todos los enlaces */
 }

@@ -36,9 +36,9 @@ function Register() {
   };
 
   return (
-    <div className="register-container">
-      <form onSubmit={handleSubmit}>
-      <h2>Únete a nosotros</h2>
+    <div className="register-container"> {/* Mantener la clase para centrar */}
+      <form className="register-form" onSubmit={handleSubmit}>
+        <h2 className="title">Únete a nosotros</h2>
         <div>
           <label>Nombre:</label>
           <input
@@ -77,7 +77,7 @@ function Register() {
           </select>
         </div>
         <div className="button-container">
-          <button type="submit">Registrar</button>
+          <button type="submit" className="submit">Registrar</button>
         </div>
       </form>
     </div>

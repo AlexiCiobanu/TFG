@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #d4ede2; /* Fondo color menta */
+  background-color: #ffffff; /* Fondo blanco */
   min-height: 100vh;
 }
 
@@ -15,21 +15,21 @@ body {
 
 /* Contenedor de la barra de navegación y las secciones */
 .main-container {
-  display: flex; /* Utiliza flex para alinear la barra lateral y el contenido */
-  flex: 1; /* Ocupa el espacio restante de la pantalla */
-  background-color: #d4ede2; /* Color de fondo menta para la sección principal */
+  display: flex;
+  flex: 1;
+  background-color: #d4ede2;
 }
 
 /* Estilo del contenido */
 .content {
-  flex: 1; /* Ocupa el espacio restante */
-  padding: 1rem; /* Espaciado interior */
-  background-color: #ffffff; /* Fondo blanco para el contenido */
+  flex: 1;
+  padding: 1rem;
+  background-color: #ffffff;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #004aad; /* Color azul oscuro */
+  background-color: #004aad;
   padding: 1rem;
 }
 
@@ -46,97 +46,132 @@ body {
   padding: 0;
 }
 
-.navbar-item {
-  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
-  font-weight: bold; /* Fuente en negrita */
-  padding: 10px;
-}
-
 .navbar-item a {
-  color: white; 
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .navbar-item a:hover {
-  color: #ffcc00; 
+  color: #ffcc00;
 }
 
 .navbar-item.active a {
   font-weight: bold;
-  color: #007BFF; 
-  border-bottom: 2px solid #007BFF; 
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
 }
 
-/* Estilos del botón 'Descubre más' */
-.discover-btn {
-  background-color: #004aad; /* Color azul oscuro */
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
-  margin-top: 1rem;
-}
-
-.discover-btn:hover {
-  background-color: #66bb6a; /* Color en hover */
-  transform: scale(1.05); /* Pequeño aumento de tamaño al hacer hover */
-}
-
-/* Estilos para el formulario de registro */
-.register-container {
+/* Posicionamiento de los botones de autenticación */
+.auth-buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* El formulario se centra verticalmente */
-  background-color: #d4ede2; /* Fondo color menta */
+  gap: 15px;
+  z-index: 1000;
 }
 
-.register-form {
-  background-color: #004aad; /* Fondo azul oscuro para el formulario */
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Ancho del formulario */
+/* Estilos específicos para los botones de "Iniciar Sesión" y "Registrarse" */
+.voltage-button {
+  position: relative;
+  display: inline-block;
 }
 
-/* Estilo para los campos de entrada */
-.register-form input {
-  width: 100%; /* Campos de entrada ocupan todo el ancho */
-  padding: 10px; /* Espacio interno */
-  margin-bottom: 1rem; /* Espacio entre campos */
-  border: 1px solid #ccc; /* Borde de los campos */
-  border-radius: 5px; /* Bordes redondeados */
+.voltage-button button {
+  color: white;
+  background: #0D1127;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid #5978F3;
+  font-size: 1rem;
+  transition: background 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Estilo para las etiquetas */
-.register-form label {
-  font-size: 1.2rem; /* Tamaño de fuente de las etiquetas */
-  margin-bottom: 0.5rem; /* Espacio inferior */
-  display: block; /* Hacer que las etiquetas ocupen toda la línea */
-  color: white; /* Color del texto en las etiquetas */
+/* Agregar animación de brillo en hover */
+.voltage-button button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 60%);
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+  opacity: 0;
 }
 
-/* Estilo para el botón de envío */
-.register-form button {
-  width: 100%; /* Botón ocupa todo el ancho */
-  padding: 10px; /* Espacio interno */
-  background-color: #66bb6a; /* Color verde claro */
-  color: white; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 1.2rem; /* Tamaño de fuente */
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+.voltage-button button:hover::before {
+  transform: translate(0, -50%) scale(1.2);
+  opacity: 1;
 }
 
-.register-form button:hover {
-  background-color: #004aad; /* Color azul oscuro al hacer hover */
+.voltage-button button:hover {
+  cursor: pointer;
+  background: #0F1C53;
+  box-shadow: 0 0 10px rgba(89, 120, 243, 0.6), 0 0 20px rgba(89, 120, 243, 0.4);
+}
+/* Estilos para el botón de "Contacto" en la navbar */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 11.5px 18px;
+  transition: all 0.2s ease;
+  border: 3px solid #0c48eb;
+  border-radius: 50px;
+  background: #030303;
+  cursor: pointer;
 }
 
-/* Elimina los estilos de los enlaces globalmente */
-a {
-  text-decoration: none !important; /* Eliminar el subrayado de todos los enlaces */
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  border-radius: 50px;
+  background: white;
+  width: 45px;
+  height: 45px;
+  transition: all 0.8s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: 'Montserrat', sans-serif; /* Usa la fuente Montserrat */
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: white;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #1c1c1c;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  transition: all 2s ease;
+}
+
+.cta:active {
+  transform: scale(0.95);
+  transition: all 2s ease;
 }

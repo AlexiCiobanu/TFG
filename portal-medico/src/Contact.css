@@ -1,77 +1,68 @@
-/* Contact.css */
-
+/* Centrar el formulario de contacto en la pantalla */
 .contact-container {
-  background-color: #f0f8ff; /* Fondo azul claro suave */
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 600px;
-  margin: 2rem auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', sans-serif;
-}
-
-.contact-container h2 {
-  text-align: center;
-  color: #004aad; /* Color del título */
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
-* {
-  box-sizing: border-box;
-}
-.contact-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f4f4f4; /* Fondo opcional para la página */
 }
 
-.contact-form label {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  color: #004aad; /* Color de las etiquetas */
+/* Ajustar tamaño y estilos de .contact-card */
+.contact-card {
+  width: 400px; /* Ajusta el ancho del formulario */
+  padding: 2rem;
+  background: lightgrey;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.5s ease-in-out;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  transition: border-color 0.3s ease;
+.contact-card .heading {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1rem;
+  font-size: large;
+}
+
+.contact-card .input-div {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.contact-card input,
+.contact-card textarea {
   width: 100%;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #004aad; /* Color de borde al enfocar */
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
   outline: none;
 }
 
-.contact-form textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-.contact-form button {
-  background-color: #004aad; /* Azul oscuro */
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #66bb6a; /* Color dorado en hover */
-}
-
-/* Añade un poco de margen al final del contenedor */
-.contact-container p {
-  color: #555;
+.contact-card .button-div {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1rem;
+}
+
+.contact-card .submit {
+  margin-top: 3rem;
+  padding: 8px 3rem;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-card .submit:hover {
+  box-shadow: rgba(44, 43, 43, 0.664) 5px 5px, rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px, rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
+  color: black;
 }

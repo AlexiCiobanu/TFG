@@ -3,25 +3,25 @@
     box-sizing: border-box;
 }
 
-/* Estilo para el contenedor del formulario de registro */
-.register-container {
+/* Estilo para el contenedor del formulario de inicio de sesión */
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; 
 }
 
-/* Estilo específico para el formulario de registro */
-.register-form {
+/* Estilo para el formulario */
+.form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 400px; /* Ancho uniforme */
-    max-width: 90%;
-    padding: 25px;
+    width: 400px; /* Ancho uniforme para ambos formularios */
+    max-width: 90%; /* Limita el ancho en pantallas pequeñas */
+    padding: 25px; /* Espaciado interno uniforme */
     border-radius: 20px;
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #fff;
+    background-color: #1a1a1a; 
+    color: #fff; 
     border: 1px solid #333;
     font-family: 'Open Sans', sans-serif;
 }
@@ -36,14 +36,6 @@
     font-size: 16px;
     transform: .3s ease;
     background-color: #00bfff;
-}
-
-.register-form input,
-.register-form select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
 }
 
 /* Estilo para el botón de Google */

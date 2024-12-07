@@ -1,0 +1,63 @@
+/* Reset de box-sizing para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo para el contenedor del formulario de inicio de sesión */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* Estilo para el formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px; /* Ancho uniforme para ambos formularios */
+    max-width: 90%; /* Limita el ancho en pantallas pequeñas */
+    padding: 25px; /* Espaciado interno uniforme */
+    border-radius: 20px;
+    background-color: #1a1a1a; 
+    color: #fff; 
+    border: 1px solid #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para el botón de envío */
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+}
+
+/* Estilo para el botón de Google */
+.google-login {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #db4437;
+    margin-top: 10px;
+}
+
+/* Estilo para los enlaces */
+.signin, .forgot-password {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.signin a, .forgot-password a {
+    color: #00bfff;
+}

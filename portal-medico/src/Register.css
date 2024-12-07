@@ -1,0 +1,71 @@
+/* Reset de box-sizing para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo para el contenedor del formulario de registro */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo específico para el formulario de registro */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px; /* Ancho uniforme */
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
+    border: 1px solid #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para el botón de envío */
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+}
+
+.register-form input,
+.register-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Estilo para el botón de Google */
+.google-login {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #db4437;
+    margin-top: 10px;
+}
+
+/* Estilo para los enlaces */
+.signin, .forgot-password {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.signin a, .forgot-password a {
+    color: #00bfff;
+}

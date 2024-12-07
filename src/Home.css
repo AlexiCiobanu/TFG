@@ -1,0 +1,36 @@
+/* src/Home.css */
+.container {
+  padding: 2rem;
+  background-color: transparent; /* Fondo transparente */
+  color: #333; /* Color del texto */
+  max-width: 800px; /* Ancho máximo para el contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+h2, h3 {
+  color: #004aad; /* Color azul del encabezado */
+}
+
+button.discover-button {
+  background-color: #004aad; /* Color azul oscuro */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  margin-top: 1rem;
+}
+
+button.discover-button:hover {
+  background-color: #66bb6a; /* Color en hover */
+  transform: scale(1.05); /* Pequeño aumento de tamaño al hacer hover */
+}
+
+blockquote {
+  border-left: 4px solid #004aad; /* Borde azul a la izquierda */
+  margin: 1rem 0;
+  padding-left: 1rem;
+  font-style: italic; /* Estilo de cursiva para el texto */
+}

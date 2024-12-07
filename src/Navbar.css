@@ -1,0 +1,92 @@
+/* src/Navbar.css */
+.navbar {
+  background-color: transparent; /* Fondo transparente */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Necesario para el dropdown */
+}
+
+.navbar-item {
+  font-size: 1.2rem; /* Tamaño de fuente */
+  font-weight: bold; /* Fuente en negrita */
+  padding: 10px;
+  position: relative; /* Aseguramos que el dropdown se posicione correctamente en relación a este elemento */
+}
+
+.navbar-item a {
+  display: block;
+  padding: 0.5rem 1rem; /* Espaciado interno entre enlaces */
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.navbar-item a:hover {
+  color: #ffcc00; /* Color al hacer hover */
+}
+
+/* No hay subrayado ni border para el enlace activo */
+.navbar-item.active a {
+  font-weight: bold;
+  color: #007BFF;
+  border-bottom: none; /* Sin subrayado para el activo */
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+  background: linear-gradient(to bottom, #66bbff 30%, #ffffff 70%); /* Gradiente de azul claro a blanco */
+  border: 1px solid #ddd; /* Borde suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  padding: 0.5rem 0; /* Espaciado interno */
+  z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+  display: none; /* Oculta el dropdown por defecto */
+  position: absolute; /* Posicionar correctamente */
+  top: 100%; /* Justo debajo de la navbar */
+}
+
+/* Mostrar el dropdown al pasar el ratón */
+.navbar-item:hover .dropdown {
+  display: block; /* Muestra el dropdown */
+}
+
+.dropdown li {
+  margin: 0; /* Sin margen en los elementos de la lista */
+}
+
+.dropdown a {
+  color: #004aad; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: block; /* Enlace ocupa toda la línea */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.dropdown a:hover {
+  background-color: rgba(0, 74, 173, 0.1); /* Fondo azul claro muy suave */
+  color: #007BFF; /* Cambiar color de texto al hacer hover */
+}
+
+/* Enlace activo en el dropdown */
+.dropdown a.active {
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+}
+
+/* Reglas para eliminar subrayado cuando el padre está activo */
+.navbar-item.active .dropdown a {
+  text-decoration: none; /* Sin subrayado */
+  color: #004aad; /* Color consistente */
+}

@@ -1,0 +1,72 @@
+/* Centrar el formulario de contacto en la pantalla */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: transparent;
+: #f4f4f4; /* Fondo opcional para la página */
+}
+
+/* Ajustar tamaño y estilos de .contact-card */
+.contact-card {
+  width: 400px; /* Ajusta el ancho del formulario */
+  padding: 2rem;
+  background: lightgrey;
+  background-color: transparent;
+: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-card .heading {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1rem;
+  font-size: large;
+}
+
+.contact-card .input-div {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.contact-card .button-div {
+  text-align: center;
+}
+
+.contact-card .submit {
+  margin-top: 3rem;
+  padding: 8px 3rem;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: transparent;
+: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-card .submit:hover {
+  box-shadow: rgba(44, 43, 43, 0.664) 5px 5px, rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px, rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
+  color: black;
+}

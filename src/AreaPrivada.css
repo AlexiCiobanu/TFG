@@ -1,0 +1,38 @@
+.area-privada {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.9); /* Fondo semitransparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.area-privada h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+  
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.menu-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.menu-button:hover {
+    background-color: #0056b3;
+    color: white;
+}

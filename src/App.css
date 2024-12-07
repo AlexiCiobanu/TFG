@@ -1,0 +1,187 @@
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('./Assets/X55.jpg'); /* Ruta a la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen al hacer scroll */
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor de la barra de navegación y las secciones */
+.main-container {
+  display: flex;
+  flex: 1;
+  background-color: transparent; /* Fondo transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: none; /* Elimina sombras */
+}
+
+/* Estilo del contenido */
+.content {
+  flex: 1;
+  padding: 1rem;
+  background-color: transparent; /* Fondo transparente */
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 74, 173, 0.8); /* Fondo azul con opacidad */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-item a:hover {
+  color: #ffcc00;
+}
+
+.navbar-item.active a {
+  font-weight: bold;
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+}
+
+/* Posicionamiento de los botones de autenticación */
+.auth-buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* Estilos específicos para los botones de "Iniciar Sesión" y "Registrarse" */
+.voltage-button {
+  position: relative;
+  display: inline-block;
+}
+
+.voltage-button button {
+  color: white;
+  background: #0D1127;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid #5978F3;
+  font-size: 1rem;
+  transition: background 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Agregar animación de brillo en hover */
+.voltage-button button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 60%);
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+.voltage-button button:hover::before {
+  transform: translate(0, -50%) scale(1.2);
+  opacity: 1;
+}
+
+.voltage-button button:hover {
+  cursor: pointer;
+  background: #0F1C53;
+  box-shadow: 0 0 10px rgba(89, 120, 243, 0.6), 0 0 20px rgba(89, 120, 243, 0.4);
+}
+
+/* Estilos para el botón de "Contacto" en la navbar */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 11.5px 18px;
+  transition: all 0.2s ease;
+  border: 3px solid #0c48eb;
+  border-radius: 50px;
+  background: #030303;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  border-radius: 50px;
+  background: white;
+  width: 45px;
+  height: 45px;
+  transition: all 0.8s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: white;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #1c1c1c;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  transition: all 2s ease;
+}
+
+.cta:active {
+  transform: scale(0.95);
+  transition: all 2s ease;
+}

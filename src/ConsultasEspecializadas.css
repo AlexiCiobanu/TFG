@@ -1,0 +1,9 @@
+/* src/ConsultasEspecializadas.css */
+.consultas-especializadas {
+    padding: 20px;
+    background-color: transparent;
+: #f0f8ff; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px;
+  }
+  

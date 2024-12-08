@@ -1,0 +1,9 @@
+/* src/ConsejosDeSalud.css */
+.consejos-de-salud {
+    padding: 20px;
+    background-color: transparent;
+    color: #f0f8ff; /* Color de texto */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px;
+  }
+  

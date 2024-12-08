@@ -1,0 +1,36 @@
+/* src/PreguntasFrecuentes.css */
+
+/* Contenedor principal */
+.preguntas-frecuentes-container {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente oscuro */
+    color: #fff; /* Color del texto blanco */
+    max-width: 800px;
+    margin: 2rem auto; /* Espaciado y centrado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra del contenedor */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  /* Títulos */
+  .preguntas-frecuentes-container h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Preguntas */
+  .pregunta h3 {
+    color: #ffffff; /* Texto blanco */
+    margin-top: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+  }
+  
+  .pregunta p {
+    font-size: 1rem;
+    line-height: 1.8; /* Espaciado entre líneas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    margin: 0.5rem 0;
+  }
+  
